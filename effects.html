@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {}
+
+        .box {
+            background-color: yellow;
+            animation-name: frontend;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+
+            position: relative;
+            animation-timing-function: ease-in;
+
+        }
+
+
+
+        @keyframes frontend {
+            from {
+                width: 10px;
+                height: 6px;
+                background-color: yellow;
+                border-radius: 2px;
+
+            }
+
+            to {
+                width: 100%;
+                height: 60px;
+                background-color: green;
+                border-radius: 60px;
+
+            }
+        }
+
+        .box-2 {
+            width: 300px;
+            height: 200px;
+            background-color: palevioletred;
+            position: absolute;
+            animation-name: path;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes path {
+            0% {
+                top: 0%;
+                left: 0%;
+                border-radius: 3x;
+                width: 300px;
+                height: 200px;
+            }
+
+            25% {
+
+                top: 0px;
+                left: 350px;
+                border-radius: 6px;
+                width: 400px;
+                height: 250px;
+                background-color: palevioletred;
+            }
+
+            50% {
+                top: 350px;
+                left: 350px;
+                border-radius: 9px;
+                width: 400px;
+                height: 300;
+                background-color: palevioletred;
+            }
+
+            75% {
+                background-color: white;
+            }
+
+            90% {
+                background-color: pink;
+            }
+
+            100% {
+                top: 350px;
+                left: 800px;
+                border-radius: 190%;
+                width: 450px;
+                height: 350px;
+            }
+        }
+
+        .box-3 {
+            background-color: yellow;
+            height: 250px;
+            width: 350px;
+        transition: all;
+        display: inline-block;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+            
+           position: absolute;
+margin-top: 100px;
+left: 50%;
+            
+            margin: auto;
+        }
+
+        .box-3:hover{
+            border-radius: 60%;
+            height: 125px;
+            width: 175px;
+            background-color: lightblue;
+          transform: matrix3d(90px);
+        
+           
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+    <div class="box-2">
+
+    </div>
+    <div class="box-3"></div>
+</body>
+
+</html>
