@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu{
+            background-color: lightgray;
+            color: white;
+            
+            
+        }
+       #menu ul li{
+            list-style: none;
+            text-decoration: none;
+            
+          
+            border: 2px solid red;
+            
+
+        }
+         a{ display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        #menu a:hover{
+             background-color: blue;
+             color: white;
+        }
+        #menu ul{
+            list-style: none;
+            display: flex;
+        }
+        #menu ul li{
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+        #meni li:hover.dropdown-11{
+            top: 0;
+            display: block;
+        }
+        .dropdown-1 li{
+            display: none;
+            position: relative;
+        }
+        .dropdown-1{
+            flex-direction: column;
+            position: absolute;
+            display: flex;
+            width: 100%;
+
+
+        }
+        #menu ul li:hover .dropdown-1 li{
+            display: block;
+        }
+        .dropdown-1 li:hover {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="">menu1</a></li>
+            <li><a href="">menu2</a>
+            <ul class="dropdown-1">
+                <li><a href="">sub menu1</a></li>
+                <li><a href="">sub menu2</a></li>
+            </ul>
+            </li>
+            <li><a href="">menu3</a>
+            <li><a href="">menu4</a>
+        </ul>
+    </div>
+</body>
+</html>
