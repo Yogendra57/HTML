@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" class="input-1">
+    <input type="text" class="input-1">
+    <input type="text" class="input-1">
+    <input type="text" class="input-1">
+    <input type="text" class="input-1">
+    <input type="text" class="input-1">
+    <input type="text" class="input-1">
+    <input type="text" class="input-1">
+    <input type="text" class="input-1">
+    <input type="text" class="input-1">
+    <button class="btn">submit</button>
+    
+    <script>
+        document.getElementsByClassName("btn")[0].onclick = function(){
+            let c = document.getElementsByClassName("input-1")
+         let a=Number(document.getElementsByClassName("input-1")[0].value)
+         let b=Number(document.getElementsByClassName("input-1")[0].value)
+        console.log(a+b);
+        for(let i in c){
+            console.log(c[i].value)
+        }
+        }
+        document.querySelector(".btn") .onclick=function(){
+            console.log("hello --")
+        }
+        let d=document.querySelectorAll("input")
+        console.log(d)
+    </script>
+</body>
+</html>

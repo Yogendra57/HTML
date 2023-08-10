@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height:70vh;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            width: 30%;
+            height: 99%;
+            border: 2px dotted red;
+        }
+        .display{
+            width: 99%;
+            height: 15%;
+            border: 2px dotted green;
+            display: flex;
+            align-items:flex-end;
+        }
+        .keys{
+            width: 99%;
+            height: 84%;
+            border: 2px dotted green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            
+
+          
+
+        }
+        .key1{
+            width: 23%;
+            height: 23%;
+            font-size: 25px;
+            text-align: center;
+            background-color: lightgray;
+        }
+
+        
+        input{
+            height: 50%;
+            width: 97%;
+           
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+<div class="display">
+    <input type="text" name="display"  class="input">
+</div>
+<div class="keys">
+    <button class="key1" id="zero">0</button>
+    <button class="key1" id="mod" >/</button>
+    <button class="key1" id="divide">/</button>
+    <button class="key1" id="multiply">*</button>
+    <button class="key1" id="seven">7</button>
+    <button class="key1" id="eight">8</button>
+    <button class="key1" id="nine">9</button>
+    <button class="key1" id="subs">-</button>
+    <button class="key1" id="four">4</button>
+    <button class="key1" id="five">5</button>
+    <button class="key1" id="six">6</button>
+    <button class="key1" id="add">+</button>
+    <button class="key1" id="one">1</button>
+    <button class="key1" id="two">2</button>
+    <button class="key1" id="three">3</button>
+    <button class="key1" id="equal">=</button>
+
+</div>
+        </div>
+    </div>
+    <script>
+       
+        let string ="";
+        let buttons = document.querySelectorAll('.buttons');
+        Array.from(buttons).forEach(button)=>{
+            button.addEventListner('click', (e)=>{
+                if(e.target.innerHTML == '='){
+                    string = eval(string);
+                    document.querySelector('input').value = string;
+                }
+                else{
+                console.log(e.target)
+                string = string + e.target.innerHTML;
+                document.querySelector('input').value = string;}
+            })
+        }
+        
+        
+    </script>
+</body>
+</html>
