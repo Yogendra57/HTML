@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #07193f;
+            color: white;
+        }
+
+        .nav{
+            height: 47px;
+            display: flex;
+            background-color: #002f4e;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav ul{
+            display: flex;
+        }
+        h2{
+            
+            margin: 12px 38px;
+        }
+        .nav ul li{
+            list-style: none;
+            margin: 0px 25px;
+            font-size: larger;
+        }
+        .about{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.5rem;
+            margin: 50px 0px;
+        }
+        .me{
+            width: 30%;
+            
+            margin: 8px;
+            font-size: 3rem;
+           
+            
+        }
+        .image{
+            width: 30%;
+            
+            margin: 8px;
+            
+        }
+        img{
+            width: 80%;
+            mix-blend-mode: ;
+            
+        }
+        .purple{
+            color: rgb(188, 134, 239);
+        }
+        ul li:hover{
+            cursor: pointer;
+            font-size: large;
+            transition: ease-in;
+            transition-duration: 0.5s;
+            transform: scale(1.5);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        hr{
+            margin: 45px;
+            height: 0.7px;
+            background-color: whitesmoke;
+        }
+        .secondsection{
+            max-width: 80vh;
+            margin: 0 96px;
+            height: 80vh;
+
+
+        }
+        #second{
+            color: gray;
+        }
+        .box{
+            
+            width: 80vw;
+            margin: 56 0px;
+            height: 0.2%;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+        }
+        .vertical-text{
+            position: relative;
+            top: 92px;
+            width: 20%;
+            font-size: 25px;
+        }
+.vertical-desc{
+    position: relative;
+    top: 100px;
+    font-size:19px ;
+    color: lightgray;
+    width: 150px;
+
+}
+.footer{
+    background-color: rgb(79 80 80);
+    height: 15vw;
+   
+    padding: 23px 122px;
+    
+   
+   
+   
+}
+.foot{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+    align-items: center;
+   font-size: 20px;}
+
+
+
+.footer-second ul li {
+    list-style: none;
+    display: flex;
+    margin: 13px;
+    flex-direction: column;
+}
+.footer .footer-rights{
+    text-align: center;
+}
+.btn{
+    border: none;
+    line-height: 40px;
+    background-color: rgb(5 37 79);
+
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 3px;
+    
+}
+.btn:hover{
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: 1s;
+    
+}
+@media(max-width:343px){
+    .footer {
+    background-color: rgb(79 80 80);
+    height: 77vw;
+    width: 144%;
+    padding: 0px;
+    font-size: x-small;
+}
+.foot{
+    flex-wrap: wrap;
+    padding: 0;
+}
+.footer-first{
+    width: 100%;
+    margin: 1%;
+    margin-left: 29%;
+
+}
+
+.me {
+    width: 100%;
+    margin: 8px;
+    font-size: 3rem;
+}
+.about{
+    display: block;
+    margin-left: 61px;
+    width: 100%;
+}
+.btn{
+    line-height: 41px;
+    font-size: 19px;
+}
+image{
+   
+}
+img{
+    width: 338%;
+   
+}
+.nav{
+    height: 98px;
+    width: 144%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.nav ul li{
+            list-style: none;
+            margin: 0px 13px;
+            font-size: large;
+        }
+        hr {
+    margin: 45px;
+    height: 0.7px;
+    width: 108%;
+}
+.box{
+    width: 193%;
+}
+.vertical-text{
+    font-size: 18px;
+}
+.vertical-desc {
+   
+   
+    font-size: 10px;
+    
+    width: 126px;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <h2>Yogendra's Portfolio</h2>
+            <ul>
+                <li> <a href="##">Home</a></li>
+                <li><a href="##">About</a></li>
+                <li><a href="##">Projects</a></li>
+                <li><a href="##">Services</a></li>
+                <li><a href="##">Contact</a></li>
+            </ul>
+        </div>
+        <div class="about">
+        <div class="me">
+          Hi, My name is <span class="purple"> Yogendra.</span>
+          <div>and I am a Passionate</div>
+          <div>Web Developer</div>
+          <button class="btn">Download Resume</button>
+          <button class="btn">Visit Github</button>
+        </div>
+        <div class="image">
+            <img src="https://www.pngitem.com/pimgs/m/112-1127587_software-hire-developers-hd-png-download.png" alt="">
+        </div>
+    </div>
+    <hr>
+    <div class="secondsection">
+        <span id="second">What I have done so far</span>
+        <h1>Qualification</h1>
+        <div class="box">
+            <div class="vertical">
+                <img src="" alt="" class="image-top">
+                <div class="vertical-text">
+                    Secondary Examination (2018)
+                </div>
+                <div class="vertical-desc">From Sachet Convent school,Alwar</div>
+            </div>
+            <div class="vertical">
+                <div class="vertical-text">
+                     Senior Secondary Examination (2021)
+                </div>
+                <div class="vertical-desc">From IGM Sr.sec. school,Jaipur</div>
+            
+            </div>
+            <div class="vertical">
+                <div class="vertical-text">
+                    BCA(2021-2024)
+               </div>
+               <div class="vertical-desc">From University Commerce College,Jaipur</div>
+            </div>
+        </div>
+    </div>
+<div class="footer">
+    <div class="foot">
+    <div class="footer-first">Developer's Portfolio</div>
+    <div class="footer-second">
+        <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+        </ul>
+    </div>
+    <div class="footer-third"> <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+        </ul></div>
+    <div class="footer-fourth"> <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+        </ul></div></div>
+    <div class="footer-rights"> www.Yogendrasportfolio.com | All rights reserved</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+            color: white;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 600px;
+            width: 450px;
+            border: 2px solid red;
+            padding: 16px 20px;
+            background-color: black;
+            box-sizing: border-box;
+            margin: 60px;
+        }
+
+        .signup {
+            width: 100%;
+            margin-top: 10px;
+            border: 0;
+            border-radius: 4px;
+            background-color: #333333;
+            color: #fff;
+            height: 50px;
+            line-height: 50px;
+            padding: 16px 0px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        ::placeholder {
+            color: white;
+            font-size: large;
+            position: absolute;
+            margin-top: -2%;
+            padding: 0px 10px;
+        }
+
+        button {
+            width: 100%;
+            height: 50px;
+            border: 0;
+            font-size: large;
+            position: relative;
+            margin-top: 40px;
+            background-color: red;
+            font-size: larger;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+
+            color: white;
+        }
+
+        .labe {
+            margin-right: 42%;
+        }
+
+        span {
+            position: relative;
+
+            right: 0%;
+        }
+
+        .new {
+            font-size: larger;
+            margin-top: 10%;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            pointer: cursor;
+        }
+
+        #learn {
+            color: blue;
+        }
+
+        p {
+            font-size: medium;
+        }
+
+        .inner-box {
+
+            padding: 16px 32px;
+        }
+
+        img {
+
+            width: 185px;
+            height: 95px;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            z-index: 2;
+        }
+
+        @media(max-width:378px) {
+            body {
+                background-image: none;
+            }
+
+            .box {
+                margin: 0%;
+                width: 100%;
+            }
+
+            .inner-box {
+                margin: 0%;
+                margin-top: 48px;
+            }
+
+            .netflix-logo {
+                position: absolute;
+                margin-left: 23%;
+            }
+
+            .inner-box {
+                padding: 16px 2px;
+            }
+
+            .labe {
+                margin-right: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="netflix-logo"
+        src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
+        alt="">
+    <div class="container">
+        <div class="box">
+            <div class="inner-box">
+                <h1>Sign In</h1>
+                <input type="text" placeholder="Enter your Email Address" class="signup">
+                <input type="text" placeholder="Enter your Password" class="signup">
+                <button>sign up</button>
+                <input type="checkbox" id="check">
+                <label for="check" class="labe">Remember me</label>
+                <span><a href="##">Need Help?</a></span>
+
+                <div class="new">
+                    <div class="signup-now">New to Netflix?
+                        <a href="##">Sign up now.</a>
+                        <p class="learn-more">
+                            This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="##"
+                                id="learn">Learn more.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
