@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj=
+        [
+            {
+            name:'abc',
+            age: 19,
+            address:'jaipur'
+        },
+        {
+            name:'abc',
+            age: 22,
+            address:'uaipur'
+        },
+        {
+            name:'abc',
+            age: 21,
+            address:'alwar'
+        }
+    ]
+      /*  console.log(obj[1].name)
+        console.log(obj[2].age)
+        console.log(obj[0].address)
+        for(let i of obj){
+            console.log(i.name)
+            
+            console.log(i.address)
+        }*/
+        //filter function----------------------------------
+        /*let a=[10,20,30,40,50,60,70,80]
+        let b=a.filter(function (item){
+            return item>50
+        })
+        console.log(b)*/
+       
+       
+       
+       
+       
+       
+        let c=obj.filter((item)=> item.age>18)
+        console.log(c)
+        let d=obj.filter(function(item){
+            if (item.age>20){
+                console.log(item)
+            }
+        })
+       
+       
+       
+       
+       
+       
+        const myobj={
+        name: 'jphn',
+        age:30,
+        cars:[
+            {name:'ford',models:['faesta','focus','mustang']},
+            {name:'bmw',models:['320','X3','X5']},
+            
+        ]
+
+       }
+       console.log(myobj.cars[1].name,myobj.cars[1].models[1])
+       
+       
+       
+       
+       
+       
+       
+       const person={
+        fname:'john',
+        lname:'doe',
+        age:23,
+        salary:function(){
+            return '50000';
+        },
+        fullname :function(){
+            return this.fname + " " +this.lname
+        }
+       }
+       console.log(person.salary())
+       console.log(person.fullname())
+
+
+
+       // sprid operator(...)------
+    var [ first,...second]=[10,20,30,40,50]
+    console.log(first)
+    console.log(second)
+
+    var numbers =[5,[2,3,4],12,14];
+    var[a,[x,y,z],b] = numbers;
+    console.log(a)
+    console.log(x)
+    console.log(y)
+    console.log(z)
+    console.log(b)
+    </script>
+</body>
+</html>
