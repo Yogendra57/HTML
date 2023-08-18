@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // it will run at every second
+/*
+        setInterval(function(){
+            document.write("Hello")
+        },1000)
+
+        // it will run after sum time which is define by the user but it will run only one time
+        setTimeout(function(){
+console.log("hello java script")
+        },3000)
+        */
+
+        // Promise-----------------
+        /*
+        let condition =true;
+        let prom =new Promise(function (resolve, reject){
+            if(condition){
+                resolve:"sucessfull"
+            }
+            else{
+                reject:"successfull"
+            }
+        })
+        prom.then((item) =>{
+            console.log(item)
+        }).catch((error) =>{
+            console.log(error)
+        })
+        ///fetch------------------------------------------
+        fetch('data.txt').then((item)=>{
+            return item.text()
+        }).then((data)=>{
+            console.log(data)
+        })
+        */
+        //async------------------
+        /*
+        async function output(){
+            return output
+        }
+        output().then((item)=>{
+            console.log("sucessfull")
+        }).catch((item2)=>{
+            console.log("unsucessfull")
+        })
+        */
+        //await function------------------
+        async function output(){
+            console.log("hello1")
+           await console.log("hello2")
+            console.log("hello3")
+        }
+        output().then((item)=>{
+            console.log("sucessfull")
+        }).catch((item2)=>{
+            console.log("unsucessfull")
+        })
+        console.log("hello4")
+    </script>
+    
+</body>
+</html>
